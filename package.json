@@ -1,0 +1,26 @@
+{
+  "name": "animation-demo",
+  "version": "1.0.0",
+  "description": "Animation Demonstration",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ArthurianX/animation-demo.git"
+  },
+  "keywords": [
+    "animation",
+    "demo",
+    "lottie",
+    "bodymovin",
+    "pixie"
+  ],
+  "author": "Arthur Kovacs",
+  "license": "ISC",
+  "dependencies": {
+    "lottie-web": "^5.1.7",
+    "materialize-css": "^0.100.2"
+  }
+}

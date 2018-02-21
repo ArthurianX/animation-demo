@@ -1,0 +1,42 @@
+{
+  "name": "bodymovin",
+  "description": "After Effects plugin for exporting animations to SVG + JavaScript or canvas + JavaScript",
+  "main": "./build/player/bodymovin.js",
+  "authors": [
+    "hernan <bodymovin@users.noreply.github.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "animation",
+    "canvas",
+    "svg",
+    "after",
+    "effects",
+    "plugin",
+    "export"
+  ],
+  "homepage": "https://github.com/bodymovin/bodymovin",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "player/",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bodymovin/bodymovin.git"
+  },
+  "version": "5.1.7",
+  "_release": "5.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v5.1.7",
+    "commit": "e0a2e6141597fb266d76bdf43ff37f2f86fdd81c"
+  },
+  "_source": "https://github.com/bodymovin/bodymovin.git",
+  "_target": "^5.1.7",
+  "_originalSource": "bodymovin",
+  "_direct": true
+}

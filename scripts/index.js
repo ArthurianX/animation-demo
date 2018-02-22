@@ -259,14 +259,27 @@ var calculateMargin = function() {
 	}
 };
 
+var stickVerticalImages = function(){
+	var w = $('body').width();
+	var h = $('body').height();
+
+	$('.para-bg').css({'width': w * 12 + 'px', 'height': h + 'px'});
+	$('.para-bg > div').css({'width': w + 'px', 'height': h + 'px'});
+};
+
 var startParallax = function(e) {
 	$('body').addClass('start-parallax');
 	// display certain div after 3 seconds
+	var startOffset = $('body').height() * (60/100)
+	$('.para-content').on('scroll', function(){
+		var offset = $('.para-content p').offset().top - startOffset;
+		$('.para-bg').css('left', Math.floor(offset) + 'px');
+	});
 
 };
 
-$( document ).ready(function() {
 
+var startLottie = function() {
 	setTimeout(function(){
 
 		blinker.setAttribute('class', 'bm blinker hidden');
@@ -281,7 +294,6 @@ $( document ).ready(function() {
 				introLetterIndex += 1;
 			} else {
 				clearInterval(this);
-
 			}
 
 			if (introLetterIndex == 17) {
@@ -308,5 +320,22 @@ $( document ).ready(function() {
 		}, Math.floor(Math.random()*(minmaxtimeout[0]-minmaxtimeout[1]+1)+minmaxtimeout[0]));
 
 	}, 2000);
+}
+
+$( document ).ready(function() {
+
+
+
 
 });
+
+$('body').on('startStuff', function() {
+
+	startLottie();
+	stickVerticalImages();
+
+
+
+});
+
+

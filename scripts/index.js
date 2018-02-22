@@ -217,7 +217,7 @@ document.addEventListener('keydown', keydownHandler);
 
 animationProvider.init();
 
-if (QuickSettings) {
+/*if (QuickSettings) {
 
 	var settings = QuickSettings.create(window.innerWidth - 200, 10, 'Options Panel (Dbl Click to open)')
 		.addButton('Collapse', collapse)
@@ -233,9 +233,9 @@ if (QuickSettings) {
 		.addDropDown('Source', ['I want to write', 'Automatic'], changeFeedSource)
 		.addButton('Clear', clear)
 		.collapse();
-}
+}*/
 
-changeFeedSource({
+/*changeFeedSource({
 	index: 0
 }, true);
 
@@ -243,7 +243,7 @@ window.onresize = function(){
 	if(settings){
 		settings._panel.style.left = (window.innerWidth - 200) + 'px';
 	}
-}
+}*/
 
 window.focus();
 
